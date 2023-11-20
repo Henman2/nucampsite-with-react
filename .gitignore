@@ -10,6 +10,10 @@
 
 # production
 /build
+dist
+.env
+.parcel-cache
+.firebase
 
 # misc
 .DS_Store
