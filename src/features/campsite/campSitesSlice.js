@@ -1,5 +1,7 @@
+//file to handle global application state for campsites feature
 import { CAMPSITES } from '../../app/shared/CAMPSITES';
 
+//return entire array of compasites
 export const selectAllCampsites = () => {
     return CAMPSITES;
 };
