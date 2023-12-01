@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import CampsitesDirectoryPage from '../src/pages/CampsitesDirectoryPage';
+import CampsiteDetailPage from './pages/CampsiteDetailPage';
 import HomePage from '../src/pages/HomePage';
 import ContactPage from '../src/pages/ContactPage';
 import AboutPage from './pages/AboutPage';
@@ -18,6 +19,7 @@ function App() {
           <Route path='contact' element={<ContactPage />} />
           <Route path='about' element={<AboutPage />} />
           <Route path='directory' element={<CampsitesDirectoryPage />} />
+          <Route path='directory/:campsiteId' element={<CampsiteDetailPage />} />
       </Routes>
     <Footer />
 </div>
