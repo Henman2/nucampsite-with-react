@@ -2,7 +2,7 @@ import { selectAllCampsites } from './campSitesSlice';
 import CampsiteCard from "./CampsiteCard";
 import {Col, Row} from  "reactstrap"
 
-const CampsitesList = ({ setCampId }) =>{
+const CampsitesList = () =>{
     const campsites = selectAllCampsites();
         return(
             <Row className="ms-auto">
