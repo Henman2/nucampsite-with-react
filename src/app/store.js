@@ -8,3 +8,5 @@ export const store = configureStore({
     campsites: campsitesReducer
   },
 });
+
+console.log(store.getState());
