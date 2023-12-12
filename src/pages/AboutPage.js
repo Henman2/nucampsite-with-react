@@ -41,7 +41,7 @@ const AboutPage = ()=>{
             </Col>
             <Col>
                 <Card className='bg-light mt-3'>
-                    <CardBody className='blockquote'><blockquote>
+                    <CardBody ><blockquote className='blockquote'>
                         <p>I will not follow where the path may lead, but I
                     will go where there is no path, and I will leave a trail. </p>
                     <footer className='blockquote-footer'>
@@ -59,8 +59,8 @@ const AboutPage = ()=>{
             <Col xs='12'>
               <h3>Community Partners</h3>  
             </Col>
+            <PartnersList />
         </Row>
-        <PartnersList />
         </Container>
     )
 
