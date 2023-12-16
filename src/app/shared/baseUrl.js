@@ -1,0 +1,1 @@
+export const baseUrl = 'http://localhost:3001/'; //specify where data is located on server
