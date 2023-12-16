@@ -9,14 +9,16 @@ import AboutPage from './pages/AboutPage';
 import Footer from './components/Footer';
 import { useDispatch } from 'react-redux';
 import { fetchCampsites } from './features/campsite/campSitesSlice';
+import { fetchPartners } from './features/partners/partnersSlice';
 import './App.css';
 
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-      dispatch(fetchCampsites());}, 
-      [dispatch]);
+    dispatch(fetchCampsites());
+    dispatch(fetchPartners());
+}, [dispatch]);
 
   return (
     <div className='App'>
