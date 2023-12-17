@@ -10,11 +10,7 @@ const PartnersList = ()=>{
     const isLoading = useSelector((state) => state.partners.isLoading);
     const errMsg = useSelector((state) => state.partners.errMsg);
     
-    return isLoading ? (
-        <Loading />
-    ) : errMsg ? (
-        <Error errMsg={errMsg} />
-    ) : (
+    return isLoading ? ( <Loading />) : errMsg ? ( <Error errMsg={errMsg} />) : (
         <Col className='mt-4'>
             <Row>
                 {partners.map((partner) => {
